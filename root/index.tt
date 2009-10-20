@@ -1,0 +1,9 @@
+[% WRAPPER wrapper.tt %]
+
+<h2>Available Repositories</h2>
+<ul>
+[% FOREACH pair IN repos.pairs %]
+<li><a href="/repo/[% pair.key %]">[% pair.value.name %]</a></li>
+[% END %]
+</ul>
+[% END %]

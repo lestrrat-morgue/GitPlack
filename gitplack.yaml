@@ -1,0 +1,4 @@
+repos:
+    myapp:
+        name: MyApp
+        directory: /path/to/myapp

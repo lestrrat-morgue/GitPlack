@@ -1,0 +1,14 @@
+[% WRAPPER wrapper.tt %]
+
+<table>
+<tbody>
+    <tr>
+        <td>branch: <a href="/repo/[% repo_id %]/branch/[% branch_id %]">[% branch_id %]</a></td>
+        <td><a href="/repo/[% repo_id %]/branch/[% branch_id %]/commits">Commits</a></td>
+    </tr>
+</tbody>
+</table>
+
+<h2>Files</h2>
+[%  PROCESS tree/dir_listing.tt, tree => object %]
+[% END %]

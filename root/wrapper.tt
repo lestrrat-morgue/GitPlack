@@ -1,0 +1,16 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css" type="text/css" media="screen" />
+    <title>GitPlack!</title>
+</head>
+<body>
+<div class="banner">
+    <div class="file-title">GitPlack</div>
+</div>
+<div id="bodyContent">
+<div id="content">
+[% content %]
+</div>
+</div>
+</body>
+</html>

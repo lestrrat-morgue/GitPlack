@@ -1,0 +1,14 @@
+[% WRAPPER wrapper.tt %]
+
+<table>
+[%- SET commit = branch %]
+[% WHILE (commit) %]
+<tr>
+    <td class="sha1"><a href="/repo/[% repo_id %]/branch/[% branch_id %]/commit/[% commit.sha1 %]">[% commit.sha1 %]</a></td>
+    <td class="author">[% commit.author.name | html %]</td>
+    <td>[% commit.comment | html %]</td>
+</tr>
+[% commit = commit.parent %]
+[% END %]
+</table>
+[% END %]

@@ -1,0 +1,5 @@
+[% WRAPPER wrapper.tt %]
+<h2>[% path_comps.item(-1) %]</h2>
+
+<div style="margin: 20px; white-space: pre">[% object.content | html %]</div>
+[% END %]

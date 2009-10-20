@@ -1,0 +1,11 @@
+
+<table>
+[% FOREACH e IN tree.directory_entries %]
+[% SET object = repo.get_object(e.sha1) %]
+<tr>
+<td><a href="/repo/[% repo_id %]/branch/[% branch_id %]/[% IF path_comps.size > 0 %][% path_comps.join('/') %]/[% END %][% e.filename %]">[% e.filename %]</a></td>
+<td>[% object.kind %]</td>
+</tr>
+[% END %]
+</table>
+
